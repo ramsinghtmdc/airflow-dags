@@ -14,7 +14,7 @@ default_args = {
 }
 
 openmetadata_config = OpenMetadataConnection(
-    hostPort="http://openmetadata.<namespace>.svc.cluster.local:8585/api",
+    hostPort="http://openmetadata.openmetadata.svc.cluster.local:8585/api",
     authProvider="openmetadata",
     securityConfig=OpenMetadataJWTClientConfig(
         jwtToken="{{ env('OPENMETADATA_JWT_TOKEN') }}"  # Use environment variable
